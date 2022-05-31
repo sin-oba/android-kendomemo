@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">剣道記録帳</string>
+    <string name="kiroku">記録</string>
+    <string name="eturan">閲覧</string>
+    <string name="bunseki">分析</string>
+    <string name="iken">意見・ご要望</string>
+    <string name="todo">TODO</string>
+    <string name="hizuke">日付</string>
+    <string name="stop">STOP</string>
+    <string name="dantainame">団体名</string>
+    <string name="senpou">先鋒</string>
+    <string name="jihou">次鋒</string>
+    <string name="tyuken">中堅</string>
+    <string name="hukusyou">副将</string>
+    <string name="taisyou">大将</string>
+    <string name="seiseki">成績</string>
+    <string name="daihyousen">代表戦</string>
+    <string name="teamA">チームA</string>
+    <string name="teamB">チームB</string>
+    <string name="kousin">更新</string>
+    <string name="sensyu">選手</string>
+    <string name="hozon">保存する</string>
+    <string name="memo">メモ</string>
+    <string name="start">start</string>
+    <string name="reset">reset</string>
+    <string name="dantaisen">団体戦</string>
+    <string name="kojinsen">個人戦</string>
+    <string name="kendomemo">剣道記録</string>
+
+
+</resources>

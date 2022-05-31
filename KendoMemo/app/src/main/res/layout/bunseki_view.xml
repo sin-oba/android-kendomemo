@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrol"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="MissingClass">
+
+    <Button
+        android:id="@+id/btnbunskei"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/button_state"
+        app:backgroundTint="@null"
+        android:text="分析"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/team"></Button>
+
+    <EditText
+        android:id="@+id/sensyu"
+        android:layout_width="111dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="12dp"
+        android:inputType="text"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="parent"></EditText>
+
+    <EditText
+        android:id="@+id/team"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toTopOf="parent"></EditText>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:text="選手名"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="24dp"
+        android:text="チーム名"
+        app:layout_constraintStart_toEndOf="@+id/sensyu"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/siai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="78dp"
+        android:text="データなし"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/syouri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="78dp"
+        android:text="データなし"
+        app:layout_constraintStart_toEndOf="@+id/siai"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/haiboku"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="78dp"
+        android:text="データなし"
+        app:layout_constraintStart_toEndOf="@+id/syouri"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/hikiwake"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="78dp"
+        android:text="データなし"
+        app:layout_constraintStart_toEndOf="@+id/haiboku"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/pichart"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.25"
+            app:layout_constraintHorizontal_bias="0.012"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/siai"
+            app:layout_constraintWidth_percent="0.50"
+            tools:ignore="MissingConstraints"></com.github.mikephil.charting.charts.PieChart>
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/shon"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintHeight_percent="0.25"
+            app:layout_constraintWidth_percent="0.50"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/skote"
+            tools:ignore="MissingConstraints"></com.github.mikephil.charting.charts.PieChart>
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/thon"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintHeight_percent="0.25"
+            app:layout_constraintWidth_percent="0.50"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rmen"
+            tools:ignore="MissingConstraints"></com.github.mikephil.charting.charts.PieChart>
+
+        <TextView
+            android:id="@+id/smen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:text="データなし"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pichart" />
+
+        <TextView
+            android:id="@+id/skote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:text=""
+            app:layout_constraintStart_toEndOf="@+id/smen"
+            app:layout_constraintTop_toBottomOf="@+id/pichart" />
+
+        <TextView
+            android:id="@+id/sdou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:text=""
+            app:layout_constraintStart_toEndOf="@+id/skote"
+            app:layout_constraintTop_toBottomOf="@+id/pichart" />
+
+        <TextView
+            android:id="@+id/stuki"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:text=""
+            app:layout_constraintStart_toEndOf="@+id/sdou"
+            app:layout_constraintTop_toBottomOf="@+id/pichart" />
+
+        <TextView
+            android:id="@+id/shan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:text=""
+            app:layout_constraintStart_toEndOf="@+id/stuki"
+            app:layout_constraintTop_toBottomOf="@+id/pichart" />
+
+        <TextView
+            android:id="@+id/husen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:text=""
+            app:layout_constraintStart_toEndOf="@+id/shan"
+            app:layout_constraintTop_toBottomOf="@+id/pichart" />
+
+        <TextView
+            android:id="@+id/rmen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:text="データなし"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/shon" />
+
+        <TextView
+            android:id="@+id/rkote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:text=""
+            app:layout_constraintStart_toEndOf="@+id/rmen"
+            app:layout_constraintTop_toTopOf="@+id/rmen" />
+
+        <TextView
+            android:id="@+id/rdou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:text=""
+            app:layout_constraintStart_toEndOf="@+id/rkote"
+            app:layout_constraintTop_toTopOf="@+id/rmen" />
+
+        <TextView
+            android:id="@+id/rtuki"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:text=""
+            app:layout_constraintStart_toEndOf="@+id/rdou"
+            app:layout_constraintTop_toTopOf="@+id/rmen" />
+
+        <TextView
+            android:id="@+id/rhan"
+            android:layout_width="88dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:text=""
+            app:layout_constraintStart_toEndOf="@+id/rtuki"
+            app:layout_constraintTop_toTopOf="@+id/rmen" />
+
+        <TextView
+            android:id="@+id/syouritu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="32dp"
+            android:text=""
+            app:layout_constraintStart_toEndOf="@+id/pichart"
+            app:layout_constraintTop_toBottomOf="@+id/haiboku" />
+
+        <TextView
+            android:id="@+id/makenairitu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="32dp"
+            android:text=""
+            app:layout_constraintStart_toEndOf="@+id/pichart"
+            app:layout_constraintTop_toBottomOf="@+id/syouritu" />
+
+        <TextView
+            android:id="@+id/hyukou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="150dp"
+            android:text=""
+            app:layout_constraintStart_toEndOf="@+id/shon"
+            app:layout_constraintTop_toBottomOf="@+id/makenairitu" />
+
+        <TextView
+            android:id="@+id/hhiyukou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="200dp"
+            android:text=""
+            app:layout_constraintStart_toEndOf="@+id/thon"
+            app:layout_constraintTop_toBottomOf="@+id/hyukou" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

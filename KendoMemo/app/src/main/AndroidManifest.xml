@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="jp.ooba.kendomemo">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher02"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher02_round"
+        android:supportsRtl="true"
+
+
+
+        android:theme="@style/Theme.KendoMemo">
+        <activity
+            android:name=".MainActivity">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".KirokuselectActyvity">
+        </activity>
+        <activity android:name=".EturanselectActivity">
+        </activity>
+        <activity android:name=".DantaiwriteActivity">
+        </activity>
+        <activity android:name=".KojinwriteActivity">
+        </activity>
+        <activity android:name=".EturansampleActivity">
+        </activity>
+        <activity android:name=".Kojineturan"></activity>
+        <activity android:name=".FileviewActivity" >
+        </activity>
+        <activity android:name=".FolderActivity"></activity>
+        <activity android:name=".KojinFoldrActivity"></activity>
+        <activity android:name=".KojinFileActivity"></activity>
+        <activity android:name=".Bunseki"></activity>
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-1201480534014260~9869293535"/>
+    </application>
+
+</manifest>

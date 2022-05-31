@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="datotu">
+        <item></item>
+        <item>メ</item>
+        <item>コ</item>
+        <item>ド</item>
+        <item>ツ</item>
+        <item>反</item>
+        <item>不</item>
+        <item>(メ)</item>
+        <item>(コ)</item>
+        <item>(ド)</item>
+        <item>(ツ)</item>
+        <item>(反)</item>
+
+
+
+    </string-array>
+</resources>

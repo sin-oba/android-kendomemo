@@ -1,0 +1,1187 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrol"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clt"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="16dp"
+            android:text="@string/hizuke"
+            app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/txtday"
+            android:layout_width="227dp"
+            android:layout_height="45dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="32dp"
+            android:focusable="false"
+            android:inputType="date"
+            app:layout_constraintStart_toEndOf="@+id/textView"
+            app:layout_constraintTop_toTopOf="parent"
+            android:autofillHints="">
+        </EditText>
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/simple_frame"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:shrinkColumns="0,1,2,3,4,5,6,7"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.25"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtday"
+            app:layout_constraintWidth_percent="0.90">
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:shrinkColumns="0,1,2,3,4,5,6,7">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.2"
+                    android:background="@drawable/simple_frame"
+                    android:gravity="center_horizontal"
+                    android:text="@string/dantainame"></TextView>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/simple_frame"
+                    android:gravity="center_horizontal"
+                    android:text="@string/senpou"></TextView>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/simple_frame"
+                    android:gravity="center_horizontal"
+                    android:text="@string/jihou"></TextView>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/simple_frame"
+                    android:gravity="center_horizontal"
+                    android:text="@string/tyuken"></TextView>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/simple_frame"
+                    android:gravity="center_horizontal"
+                    android:text="@string/hukusyou"></TextView>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/simple_frame"
+                    android:gravity="center_horizontal"
+                    android:text="@string/taisyou"></TextView>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/simple_frame"
+                    android:gravity="center_horizontal"
+                    android:text="@string/seiseki"></TextView>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/simple_frame"
+                    android:gravity="center_horizontal"
+                    android:text="@string/daihyousen"></TextView>
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="7"
+                android:orientation="vertical"
+                android:shrinkColumns="0,1,2,3,4,5,6,7">
+
+                <EditText
+                    android:id="@+id/txtTeamA"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.2"
+                    android:background="@drawable/simple_frame"
+                    android:inputType="textMultiLine"
+                    android:maxLength="20"
+                    android:maxLines="2"
+                    android:text="@string/teamA"
+                    android:gravity="center"
+                    android:textSize="12sp"></EditText>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:shrinkColumns="0,1,2,3"
+                    android:stretchColumns="0,1,2,3">
+
+                    <EditText
+                        android:id="@+id/playerA"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"
+                        android:background="@drawable/simple_frame"
+                        android:inputType="text"
+                        android:gravity="center"
+                        android:textSize="12sp"></EditText>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <ToggleButton
+                            android:id="@+id/hanA1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/hansoku_state"
+                            android:textOff=" "
+                            android:textOn=" "
+                            android:gravity="center"
+                            app:layout_constraintStart_toEndOf="@+id/bt"
+                            app:layout_constraintTop_toBottomOf="@+id/TEXT" />
+
+                        <ToggleButton
+                            android:id="@+id/hanA2"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/hansoku_state"
+                            android:textOff=" "
+                            android:textOn=" "
+                            android:gravity="center"
+                            app:layout_constraintStart_toEndOf="@+id/bt"
+                            app:layout_constraintTop_toBottomOf="@+id/TEXT" />
+                    </LinearLayout>
+
+                    <Spinner
+                        android:id="@+id/spA1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:background="@drawable/simple_frame"
+                        android:entries="@array/datotu"></Spinner>
+
+                    <Spinner
+                        android:id="@+id/spA2"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:background="@drawable/simple_frame"
+                        android:entries="@array/datotu"></Spinner>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:shrinkColumns="0,1,2,3">
+
+                    <EditText
+                        android:id="@+id/playerB"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"
+                        android:gravity="center"
+                        android:background="@drawable/simple_frame"
+                        android:inputType="text"
+                        android:textSize="12sp"></EditText>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <ToggleButton
+                            android:id="@+id/hanB1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/hansoku_state"
+                            android:textOff=" "
+                            android:textOn=" "
+                            android:gravity="center"
+                            app:layout_constraintStart_toEndOf="@+id/bt"
+                            app:layout_constraintTop_toBottomOf="@+id/TEXT" />
+
+                        <ToggleButton
+                            android:id="@+id/hanB2"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/hansoku_state"
+                            android:textOff=" "
+                            android:textOn=" "
+                            android:gravity="center"
+                            app:layout_constraintStart_toEndOf="@+id/bt"
+                            app:layout_constraintTop_toBottomOf="@+id/TEXT" />
+                    </LinearLayout>
+
+                    <Spinner
+                        android:id="@+id/spB1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:background="@drawable/simple_frame"
+                        android:entries="@array/datotu"></Spinner>
+
+                    <Spinner
+                        android:id="@+id/spB2"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:background="@drawable/simple_frame"
+                        android:entries="@array/datotu"></Spinner>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:shrinkColumns="0,1,2,3">
+
+                    <EditText
+                        android:id="@+id/playerC"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"
+                        android:gravity="center"
+                        android:background="@drawable/simple_frame"
+                        android:inputType="text"
+                        android:textSize="12sp"></EditText>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <ToggleButton
+                            android:id="@+id/hanC1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/hansoku_state"
+                            android:textOff=" "
+                            android:textOn=" "
+                            android:gravity="center"
+                            app:layout_constraintStart_toEndOf="@+id/bt"
+                            app:layout_constraintTop_toBottomOf="@+id/TEXT" />
+
+                        <ToggleButton
+                            android:id="@+id/hanC2"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/hansoku_state"
+                            android:textOff=" "
+                            android:textOn=" "
+                            android:gravity="center"
+                            app:layout_constraintStart_toEndOf="@+id/bt"
+                            app:layout_constraintTop_toBottomOf="@+id/TEXT" />
+                    </LinearLayout>
+
+                    <Spinner
+                        android:id="@+id/spC1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:background="@drawable/simple_frame"
+                        android:entries="@array/datotu"></Spinner>
+
+                    <Spinner
+                        android:id="@+id/spC2"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:background="@drawable/simple_frame"
+                        android:entries="@array/datotu"></Spinner>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:shrinkColumns="0,1,2,3">
+
+                    <EditText
+                        android:id="@+id/playerD"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"
+                        android:background="@drawable/simple_frame"
+                        android:inputType="text"
+                        android:gravity="center"
+                        android:textSize="12sp"></EditText>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <ToggleButton
+                            android:id="@+id/hanD1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/hansoku_state"
+                            android:textOff=" "
+                            android:textOn=" "
+                            android:gravity="center"
+                            app:layout_constraintStart_toEndOf="@+id/bt"
+                            app:layout_constraintTop_toBottomOf="@+id/TEXT" />
+
+                        <ToggleButton
+                            android:id="@+id/hanD2"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/hansoku_state"
+                            android:textOff=" "
+                            android:textOn=" "
+                            android:gravity="center"
+                            app:layout_constraintStart_toEndOf="@+id/bt"
+                            app:layout_constraintTop_toBottomOf="@+id/TEXT" />
+                    </LinearLayout>
+
+                    <Spinner
+                        android:id="@+id/spD1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:background="@drawable/simple_frame"
+                        android:entries="@array/datotu"></Spinner>
+
+                    <Spinner
+                        android:id="@+id/spD2"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:background="@drawable/simple_frame"
+                        android:entries="@array/datotu"></Spinner>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:shrinkColumns="0,1,2,3">
+
+                    <EditText
+                        android:id="@+id/playerE"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"
+                        android:background="@drawable/simple_frame"
+                        android:inputType="text"
+                        android:gravity="center"
+                        android:textSize="12sp"></EditText>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <ToggleButton
+                            android:id="@+id/hanE1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/hansoku_state"
+                            android:textOff=" "
+                            android:textOn=" "
+                            android:gravity="center"
+                            app:layout_constraintStart_toEndOf="@+id/bt"
+                            app:layout_constraintTop_toBottomOf="@+id/TEXT" />
+
+                        <ToggleButton
+                            android:id="@+id/hanE2"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/hansoku_state"
+                            android:textOff=" "
+                            android:textOn=" "
+                            android:gravity="center"
+                            app:layout_constraintStart_toEndOf="@+id/bt"
+                            app:layout_constraintTop_toBottomOf="@+id/TEXT" />
+                    </LinearLayout>
+
+                    <Spinner
+                        android:id="@+id/spE1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:background="@drawable/simple_frame"
+                        android:entries="@array/datotu"></Spinner>
+
+                    <Spinner
+                        android:id="@+id/spE2"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:background="@drawable/simple_frame"
+                        android:entries="@array/datotu"></Spinner>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/nhonA"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:background="@drawable/simple_frame"></TextView>
+
+                    <TextView
+                        android:id="@+id/nsyouA"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:background="@drawable/simple_frame"></TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:shrinkColumns="0,1,2,3">
+
+                    <EditText
+                        android:id="@+id/playerF"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"
+                        android:background="@drawable/simple_frame"
+                        android:inputType="text"
+                        android:gravity="center"
+                        android:textSize="12sp"></EditText>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <ToggleButton
+                            android:id="@+id/hanF1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/hansoku_state"
+                            android:textOff=" "
+                            android:textOn=" "
+                            android:gravity="center"
+                            app:layout_constraintStart_toEndOf="@+id/bt"
+                            app:layout_constraintTop_toBottomOf="@+id/TEXT" />
+
+                        <ToggleButton
+                            android:id="@+id/hanF2"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/hansoku_state"
+                            android:textOff=" "
+                            android:textOn=" "
+                            android:gravity="center"
+                            app:layout_constraintStart_toEndOf="@+id/bt"
+                            app:layout_constraintTop_toBottomOf="@+id/TEXT" />
+                    </LinearLayout>
+
+                    <Spinner
+                        android:id="@+id/spF1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:background="@drawable/simple_frame"
+                        android:entries="@array/datotu"></Spinner>
+
+                    <Spinner
+                        android:id="@+id/spF2"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:background="@drawable/simple_frame"
+                        android:entries="@array/datotu"></Spinner>
+                </LinearLayout>
+
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="7"
+                android:background="@drawable/simple_frame"
+                android:orientation="vertical"
+                android:shrinkColumns="0,1,2,3,4,5,6,7">
+
+                <EditText
+                    android:id="@+id/txtTeamB"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.2"
+                    android:background="@drawable/simple_frame"
+                    android:inputType="textMultiLine"
+                    android:maxLength="20"
+                    android:maxLines="2"
+                    android:text="@string/teamB"
+                    android:gravity="center"
+                    android:textSize="12sp"></EditText>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:shrinkColumns="0,1,2,3">
+
+                    <Spinner
+                        android:id="@+id/spG1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:background="@drawable/simple_frame"
+                        android:entries="@array/datotu"></Spinner>
+
+                    <Spinner
+                        android:id="@+id/spG2"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:background="@drawable/simple_frame"
+                        android:entries="@array/datotu"></Spinner>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <ToggleButton
+                            android:id="@+id/hanG1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/hansoku_state"
+                            android:textOff=" "
+                            android:textOn=" "
+                            android:gravity="center"
+                            app:layout_constraintStart_toEndOf="@+id/bt"
+                            app:layout_constraintTop_toBottomOf="@+id/TEXT" />
+
+                        <ToggleButton
+                            android:id="@+id/hanG2"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/hansoku_state"
+                            android:textOff=" "
+                            android:textOn=" "
+                            android:gravity="center"
+                            app:layout_constraintStart_toEndOf="@+id/bt"
+                            app:layout_constraintTop_toBottomOf="@+id/TEXT" />
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/playerG"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"
+                        android:background="@drawable/simple_frame"
+                        android:inputType="text"
+                        android:gravity="center"
+                        android:textSize="12sp"></EditText>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:shrinkColumns="0,1,2,3">
+
+                    <Spinner
+                        android:id="@+id/spH1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:background="@drawable/simple_frame"
+                        android:entries="@array/datotu"></Spinner>
+
+                    <Spinner
+                        android:id="@+id/spH2"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:background="@drawable/simple_frame"
+                        android:entries="@array/datotu"></Spinner>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <ToggleButton
+                            android:id="@+id/hanH1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/hansoku_state"
+                            android:textOff=" "
+                            android:textOn=" "
+                            android:gravity="center"
+                            app:layout_constraintStart_toEndOf="@+id/bt"
+                            app:layout_constraintTop_toBottomOf="@+id/TEXT" />
+
+                        <ToggleButton
+                            android:id="@+id/hanH2"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/hansoku_state"
+                            android:textOff=" "
+                            android:textOn=" "
+                            android:gravity="center"
+                            app:layout_constraintStart_toEndOf="@+id/bt"
+                            app:layout_constraintTop_toBottomOf="@+id/TEXT" />
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/playerH"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"
+                        android:gravity="center"
+                        android:background="@drawable/simple_frame"
+                        android:inputType="text"
+                        android:textSize="12sp"></EditText>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:shrinkColumns="0,1,2,3">
+
+                    <Spinner
+                        android:id="@+id/spI1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:background="@drawable/simple_frame"
+                        android:entries="@array/datotu"></Spinner>
+
+                    <Spinner
+                        android:id="@+id/spI2"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:background="@drawable/simple_frame"
+                        android:entries="@array/datotu"></Spinner>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <ToggleButton
+                            android:id="@+id/hanI1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/hansoku_state"
+                            android:textOff=" "
+                            android:textOn=" "
+                            android:gravity="center"
+                            app:layout_constraintStart_toEndOf="@+id/bt"
+                            app:layout_constraintTop_toBottomOf="@+id/TEXT" />
+
+                        <ToggleButton
+                            android:id="@+id/hanI2"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/hansoku_state"
+                            android:textOff=" "
+                            android:textOn=" "
+                            android:gravity="center"
+                            app:layout_constraintStart_toEndOf="@+id/bt"
+                            app:layout_constraintTop_toBottomOf="@+id/TEXT" />
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/playerI"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"
+                        android:background="@drawable/simple_frame"
+                        android:inputType="text"
+                        android:gravity="center"
+                        android:textSize="12sp"></EditText>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:shrinkColumns="0,1,2,3">
+
+                    <Spinner
+                        android:id="@+id/spJ1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:background="@drawable/simple_frame"
+                        android:entries="@array/datotu"></Spinner>
+
+                    <Spinner
+                        android:id="@+id/spJ2"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:background="@drawable/simple_frame"
+                        android:entries="@array/datotu"></Spinner>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <ToggleButton
+                            android:id="@+id/hanJ1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/hansoku_state"
+                            android:textOff=" "
+                            android:textOn=" "
+                            android:gravity="center"
+                            app:layout_constraintStart_toEndOf="@+id/bt"
+                            app:layout_constraintTop_toBottomOf="@+id/TEXT" />
+
+                        <ToggleButton
+                            android:id="@+id/hanJ2"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/hansoku_state"
+                            android:textOff=" "
+                            android:textOn=" "
+                            android:gravity="center"
+                            app:layout_constraintStart_toEndOf="@+id/bt"
+                            app:layout_constraintTop_toBottomOf="@+id/TEXT" />
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/playerJ"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"
+                        android:background="@drawable/simple_frame"
+                        android:inputType="text"
+                        android:gravity="center"
+                        android:textSize="12sp"></EditText>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:shrinkColumns="0,1,2,3">
+
+                    <Spinner
+                        android:id="@+id/spK1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:background="@drawable/simple_frame"
+                        android:entries="@array/datotu"></Spinner>
+
+                    <Spinner
+                        android:id="@+id/spK2"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:background="@drawable/simple_frame"
+                        android:entries="@array/datotu"></Spinner>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <ToggleButton
+                            android:id="@+id/hanK1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/hansoku_state"
+                            android:textOff=" "
+                            android:textOn=" "
+                            android:gravity="center"
+                            app:layout_constraintStart_toEndOf="@+id/bt"
+                            app:layout_constraintTop_toBottomOf="@+id/TEXT" />
+
+                        <ToggleButton
+                            android:id="@+id/hanK2"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/hansoku_state"
+                            android:textOff=" "
+                            android:textOn=" "
+                            android:gravity="center"
+                            app:layout_constraintStart_toEndOf="@+id/bt"
+                            app:layout_constraintTop_toBottomOf="@+id/TEXT" />
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/playerK"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"
+                        android:background="@drawable/simple_frame"
+                        android:inputType="text"
+                        android:gravity="center"
+                        android:textSize="12sp"></EditText>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/nhonB"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:background="@drawable/simple_frame"></TextView>
+
+                    <TextView
+                        android:id="@+id/nsyouB"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:background="@drawable/simple_frame"></TextView>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:shrinkColumns="0,1,2,3">
+
+                    <Spinner
+                        android:id="@+id/spL1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:background="@drawable/simple_frame"
+                        android:entries="@array/datotu"></Spinner>
+
+                    <Spinner
+                        android:id="@+id/spL2"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:background="@drawable/simple_frame"
+                        android:entries="@array/datotu"></Spinner>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <ToggleButton
+                            android:id="@+id/hanL1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/hansoku_state"
+                            android:textOff=" "
+                            android:textOn=" "
+                            android:gravity="center"
+                            app:layout_constraintStart_toEndOf="@+id/bt"
+                            app:layout_constraintTop_toBottomOf="@+id/TEXT" />
+
+                        <ToggleButton
+                            android:id="@+id/hanL2"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/hansoku_state"
+                            android:textOff=" "
+                            android:textOn=" "
+                            android:gravity="center"
+                            app:layout_constraintStart_toEndOf="@+id/bt"
+                            app:layout_constraintTop_toBottomOf="@+id/TEXT" />
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/playerL"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"
+                        android:autofillHints=""
+                        android:gravity="center"
+                        android:background="@drawable/simple_frame"
+                        android:inputType="text"
+                        android:textSize="12sp"></EditText>
+
+
+                </LinearLayout>
+
+            </TableRow>
+
+
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/txtMemo"
+            android:layout_width="wrap_content"
+            android:layout_height="19dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="32dp"
+            android:text="@string/memo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
+
+
+        <EditText
+            android:id="@+id/MEMO"
+            android:layout_width="match_parent"
+            android:layout_height="226dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/simple_frame"
+            android:maxLines="8"
+            android:maxLength="170"
+            android:inputType="textMultiLine"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtMemo"
+            android:importantForAutofill="no" />
+
+        <Button
+            android:id="@+id/bt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="250dp"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/button_state"
+            android:text="@string/hozon"
+            app:backgroundTint="@null"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/MEMO" />
+
+        <TextView
+            android:id="@+id/timer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="568dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:textColor="#00f"
+            android:textSize="60sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bt" />
+
+        <Button
+            android:id="@+id/start_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:text="@string/start"
+            app:backgroundTint="@null"
+            android:background="@drawable/button_state"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/timer" />
+
+
+        <Button
+            android:id="@+id/stop_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_state"
+            android:text="@string/stop"
+            app:backgroundTint="@null"
+            app:layout_constraintEnd_toStartOf="@+id/reset_button"
+            app:layout_constraintStart_toEndOf="@+id/start_button"
+            app:layout_constraintTop_toBottomOf="@+id/timer" />
+
+        <Button
+            android:id="@+id/reset_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:text="@string/reset"
+            app:backgroundTint="@null"
+            android:background="@drawable/button_state"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/stop_button"
+            app:layout_constraintTop_toBottomOf="@+id/timer" />
+
+        <NumberPicker
+            android:id="@+id/minute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            app:layout_constraintEnd_toStartOf="@+id/second"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/reset_button">
+        </NumberPicker>
+
+        <NumberPicker
+            android:id="@+id/second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/minute"
+            app:layout_constraintTop_toBottomOf="@+id/reset_button">
+
+        </NumberPicker>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+
